@@ -21,6 +21,8 @@ public class MenuDownloader implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
+		TabCommand.register();
+
 		ScreenEvents.AFTER_INIT.register((client, screen, scaledWidth, scaledHeight) -> {
 			if (!(screen instanceof ContainerScreen gui)) {
 				return;

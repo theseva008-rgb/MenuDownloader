@@ -45,6 +45,11 @@ public final class TextConverter {
 		return out.toString();
 	}
 
+	/** YAML-строка в одинарных кавычках. */
+	public static String yamlQuote(String s) {
+		return "'" + s.replace("'", "''") + "'";
+	}
+
 	/** Убирает коды &x и &#RRGGBB (для имён файлов и open_command). */
 	public static String stripCodes(String legacy) {
 		return legacy.replaceAll("&#[0-9A-Fa-f]{6}", "").replaceAll("&[0-9a-fk-orA-FK-OR]", "");
