@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "menudownloader",
+  "version": "${version}",
+  "name": "MenuDownloader",
+  "description": "Adds DeluxeMenus and BMenu export buttons above server chest menus. Saves the menu as a txt file in mods/MenuDownloader.",
+  "authors": ["BuildCore"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.buildcore.menudownloader.MenuDownloader"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
